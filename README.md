@@ -1,3 +1,5 @@
+cli tool written used by swift.js to create a react/nextjs based web-app
+
 Dependencies:
 - [golang](https://go.dev/)
 - [bun](https://bun.sh/)
