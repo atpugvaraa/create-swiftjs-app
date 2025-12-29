@@ -2,14 +2,14 @@ import React from "react";
 import { ViewProps } from "@/swiftui/types";
 
 interface ButtonProps extends ViewProps {
-  label: string;
+  title: string;
   action: () => void;
   disabled?: boolean;
   variant?: "primary" | "secondary" | "destructive";
 }
 
 export const Button: React.FC<ButtonProps> = ({
-  label,
+  title,
   action,
   disabled = false,
   variant = "primary",
@@ -43,7 +43,7 @@ export const Button: React.FC<ButtonProps> = ({
       disabled={disabled}
       {...props}
     >
-      {label}
+      {title}
     </button>
   );
 };
